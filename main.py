@@ -16,7 +16,7 @@ def seo_analysis(url):
     good = []
     bad = []
     # Send a GET request to the website
-    response = requests.get(url,timeout=2.50)
+    response = requests.get(url)
     # Check the response status code
     if response.status_code != 200:
         print("Error: Unable to access the website.")
